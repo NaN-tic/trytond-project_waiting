@@ -1,0 +1,20 @@
+# 
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt ""
+"model:ir.action.act_window.domain,name:act_project_form_domain_waiting"
+msgid "Waiting"
+msgstr "Pendent"
+
+msgctxt "model:ir.action.act_window.domain,name:act_task_form_domain_waiting"
+msgid "Waiting"
+msgstr "Pendent"
+
+msgctxt "selection:project.work,state:"
+msgid "Waiting"
+msgstr "Pendent"
+
+msgctxt "view:project.work:"
+msgid "Wait"
+msgstr "Pendent"

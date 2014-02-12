@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!-- This file is part of the project_waiting module for Tryton.
+The COPYRIGHT file at the top level of this repository contains the full
+copyright notices and license terms. -->
+<tryton>
+    <data>
+        <record model="ir.ui.view" id="work_view_list">
+            <field name="model">project.work</field>
+            <field name="inherit" ref="project.work_view_list"/>
+            <field name="name">work_list</field>
+        </record>
+        <record model="ir.ui.view" id="work_view_list2">
+            <field name="model">project.work</field>
+            <field name="inherit" ref="project.work_view_list2"/>
+            <field name="name">work_list2</field>
+        </record>
+        <record model="ir.ui.view" id="work_view_form">
+            <field name="model">project.work</field>
+            <field name="inherit" ref="project.work_view_form"/>
+            <field name="name">work_form</field>
+        </record>
+
+        <!-- Tabs state project -->
+        <record model="ir.action.act_window.domain" id="act_project_form_domain_waiting">
+            <field name="name">Waiting</field>
+            <field name="sequence" eval="30"/>
+            <field name="domain">[('state', '=', 'waiting')]</field>
+            <field name="act_window" ref="project.act_project_form"/>
+        </record>
+
+        <!-- Tabs state task -->
+        <record model="ir.action.act_window.domain" id="act_task_form_domain_waiting">
+            <field name="name">Waiting</field>
+            <field name="sequence" eval="20"/>
+            <field name="domain">[('state', '=', 'waiting')]</field>
+            <field name="act_window" ref="project.act_task_form"/>
+        </record>
+    </data>
+</tryton>
