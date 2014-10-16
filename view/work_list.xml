@@ -5,6 +5,6 @@ copyright notices and license terms. -->
 <data>
     <xpath expr="/tree/field[@name='state']"
             position="after">
-        <button name="wait" string="Wait"/>
+        <button name="wait" string="Wait" tree_invisible="1"/>
     </xpath>
 </data>
