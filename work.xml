@@ -24,7 +24,9 @@ copyright notices and license terms. -->
         <record model="ir.action.act_window.domain" id="act_project_form_domain_waiting">
             <field name="name">Waiting</field>
             <field name="sequence" eval="30"/>
-            <field name="domain">[('state', '=', 'waiting')]</field>
+            <field name="domain"
+                eval="[('state', '=', 'waiting')]"
+                pyson="1"/>
             <field name="act_window" ref="project.act_project_form"/>
         </record>
 
@@ -32,7 +34,9 @@ copyright notices and license terms. -->
         <record model="ir.action.act_window.domain" id="act_task_form_domain_waiting">
             <field name="name">Waiting</field>
             <field name="sequence" eval="20"/>
-            <field name="domain">[('state', '=', 'waiting')]</field>
+            <field name="domain"
+                eval="[('state', '=', 'waiting')]"
+                pyson="1"/>
             <field name="act_window" ref="project.act_task_form"/>
         </record>
     </data>
